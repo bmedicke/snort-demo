@@ -1,1 +1,1 @@
-docker-compose exec blue /bin/bash -c 'tmux'
+docker-compose exec blue /bin/bash -c 'tmux a || tmux'
