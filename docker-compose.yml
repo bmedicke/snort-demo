@@ -1,0 +1,16 @@
+version: '2'
+services:
+
+  red:
+    build: .
+    hostname: red
+    command: tail -f /dev/null
+    # volumes:
+    #   - ./root:/root
+
+  blue:
+    build: .
+    hostname: blue
+    command: tail -f /dev/null
+    volumes:
+      - ./snort.conf:/etc/snort/snort.conf
