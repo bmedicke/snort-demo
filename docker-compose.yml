@@ -5,12 +5,21 @@ services:
     build: .
     hostname: red
     command: tail -f /dev/null
-    # volumes:
-    #   - ./root:/root
+    volumes:
+      - ./bashrc:/root/.bashrc
+      - ./inputrc:/root/.inputrc
+      - ./tmux_red:/root/.tmux.conf
+    environment:
+      - TZ=Europe/Berlin
 
   blue:
     build: .
     hostname: blue
     command: tail -f /dev/null
     volumes:
+      - ./bashrc:/root/.bashrc
+      - ./inputrc:/root/.inputrc
+      - ./tmux_blue:/root/.tmux.conf
       - ./snort.conf:/etc/snort/snort.conf
+    environment:
+      - TZ=Europe/Berlin
