@@ -10,7 +10,7 @@
 - build the containers: `docker-compose build`
 - start the containers: `docker-compose up`
 - source the aliases on the host for easier management: `source alias`
-- use `red` and `blue` aliases to connect to respective host
+- use the `red` and `blue` aliases to connect to the respective host
 
 # blue host
 
