@@ -1,7 +1,7 @@
 # getting started
 
 - install docker on your host machine
-- pull this repo `git pull XXX && cd XXX`
+- clone this repo `git pull https://github.com/bmedicke/snort-demo.git && cd snort-demo`
 - build the containers: `docker-compose build`
 - start the containers: `docker-compose up`
 - source the aliases on the host for easier management: `source alias`
