@@ -1,3 +1,8 @@
+# requirements
+
+- [Docker](https://www.docker.com/community-edition#/download)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
 # getting started
 
 - install docker on your host machine
