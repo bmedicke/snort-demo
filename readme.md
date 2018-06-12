@@ -12,7 +12,14 @@
 - edit `snort.conf` to your hearts content (skip to end of files for demo rules)
   - _note_: you can do this outside of the container
 - run snort via `snort -c /etc/snort/snort.conf -A console` or the `s` alias
+- for the SSH dictionary attack:
+  - change your root password with `passwd`
+  - start the ssh server in a new tmux pane `/usr/sbin/sshd -D`
 
 # red host
 
 - start probing the blue host and see what happens
+- things to try:
+  - `ping -c1 blue` send single ping probe
+  - `nmap -sV blue` version detection scan
+  - `hydra -l root -P 500-worst-passwords.txt blue ssh` ssh dictionary attack
