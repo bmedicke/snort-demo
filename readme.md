@@ -29,6 +29,10 @@
   - `nmap -sV blue` version detection scan
   - `hydra -l root -P 500-worst-passwords.txt blue ssh` ssh dictionary attack
 
+# slides 
+
+* https://docs.google.com/presentation/d/163TAQcNwgagrOAgt2Lnf7sQgrNOGqU50169eBsMDbs0
+
 # recommended talks
 
 - [Martin Roesch | From The Garage To NASDAQ With Open Source The Sourcefire Experience](https://www.youtube.com/watch?v=nfHyN4O9VyY)
